@@ -1,0 +1,411 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ledmatrix
+LIBS:misc_logic
+LIBS:ledmatrix-dual-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2900 3700 0    60   Input ~ 0
+RI_A
+Text HLabel 2900 3800 0    60   Input ~ 0
+RI_B
+Text HLabel 2900 3900 0    60   Input ~ 0
+RI_C
+$Comp
+L 74HC138 U?
+U 1 1 59AADF2B
+P 3550 4050
+F 0 "U?" H 3550 4050 60  0000 C CNN
+F 1 "74HC138" H 3450 4550 60  0000 C CNN
+F 2 "" H 3550 3800 60  0001 C CNN
+F 3 "" H 3550 3800 60  0001 C CNN
+	1    3550 4050
+	1    0    0    -1  
+$EndComp
+Text HLabel 2900 4000 0    60   Input ~ 0
+ROW_EN
+Text HLabel 2900 4100 0    60   Input ~ 0
+GND
+Text HLabel 2900 4200 0    60   Input ~ 0
+GND
+Text HLabel 2900 4400 0    60   Input ~ 0
+GND
+Text HLabel 2900 4300 0    60   Input ~ 0
+VCC
+Wire Wire Line
+	2900 3700 3050 3700
+Wire Wire Line
+	2900 3800 3050 3800
+Wire Wire Line
+	2900 3900 3050 3900
+Wire Wire Line
+	2900 4000 3050 4000
+Wire Wire Line
+	2900 4100 3050 4100
+Wire Wire Line
+	2900 4200 3050 4200
+Wire Wire Line
+	2900 4300 3050 4300
+Wire Wire Line
+	2900 4400 3050 4400
+Wire Wire Line
+	4050 4000 4700 4000
+Wire Wire Line
+	4050 4100 4700 4100
+Wire Wire Line
+	4050 4200 4600 4200
+Wire Wire Line
+	4050 4300 4500 4300
+Wire Wire Line
+	4050 4400 4400 4400
+Text Label 4150 3700 0    60   ~ 0
+RC1
+Text Label 4150 3800 0    60   ~ 0
+RC2
+Text Label 4150 3900 0    60   ~ 0
+RC3
+Text Label 4150 4000 0    60   ~ 0
+RC4
+Text Label 4150 4100 0    60   ~ 0
+RC5
+Text Label 4150 4200 0    60   ~ 0
+RC6
+Text Label 4150 4300 0    60   ~ 0
+RC7
+Text Label 4150 4400 0    60   ~ 0
+RC8
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE1E4
+P 5950 1400
+F 0 "Q?" H 6150 1450 50  0000 L CNN
+F 1 "PMV50XP" H 6150 1350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 1500 50  0001 C CNN
+F 3 "" H 5950 1400 50  0001 C CNN
+	1    5950 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE235
+P 5550 1400
+F 0 "R?" H 5580 1420 50  0000 L CNN
+F 1 "180" H 5580 1360 50  0000 L CNN
+F 2 "" H 5550 1400 50  0001 C CNN
+F 3 "" H 5550 1400 50  0001 C CNN
+	1    5550 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 1400 5750 1400
+Wire Wire Line
+	6050 1600 6050 1700
+Wire Wire Line
+	6050 1200 6050 1100
+Text HLabel 6050 1100 0    60   Input ~ 0
+VCC
+Text HLabel 6050 1700 2    60   Input ~ 0
+RO_1
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE395
+P 5950 2150
+F 0 "Q?" H 6150 2200 50  0000 L CNN
+F 1 "PMV50XP" H 6150 2100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 2250 50  0001 C CNN
+F 3 "" H 5950 2150 50  0001 C CNN
+	1    5950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE39B
+P 5550 2150
+F 0 "R?" H 5580 2170 50  0000 L CNN
+F 1 "180" H 5580 2110 50  0000 L CNN
+F 2 "" H 5550 2150 50  0001 C CNN
+F 3 "" H 5550 2150 50  0001 C CNN
+	1    5550 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2150 5750 2150
+Wire Wire Line
+	6050 2350 6050 2450
+Wire Wire Line
+	6050 1950 6050 1850
+Text HLabel 6050 1850 0    60   Input ~ 0
+VCC
+Text HLabel 6050 2450 2    60   Input ~ 0
+RO_2
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE43E
+P 5950 2900
+F 0 "Q?" H 6150 2950 50  0000 L CNN
+F 1 "PMV50XP" H 6150 2850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 3000 50  0001 C CNN
+F 3 "" H 5950 2900 50  0001 C CNN
+	1    5950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE444
+P 5550 2900
+F 0 "R?" H 5580 2920 50  0000 L CNN
+F 1 "180" H 5580 2860 50  0000 L CNN
+F 2 "" H 5550 2900 50  0001 C CNN
+F 3 "" H 5550 2900 50  0001 C CNN
+	1    5550 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2900 5750 2900
+Wire Wire Line
+	6050 3100 6050 3200
+Wire Wire Line
+	6050 2700 6050 2600
+Text HLabel 6050 2600 0    60   Input ~ 0
+VCC
+Text HLabel 6050 3200 2    60   Input ~ 0
+RO_3
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE451
+P 5950 3650
+F 0 "Q?" H 6150 3700 50  0000 L CNN
+F 1 "PMV50XP" H 6150 3600 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 3750 50  0001 C CNN
+F 3 "" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE457
+P 5550 3650
+F 0 "R?" H 5580 3670 50  0000 L CNN
+F 1 "180" H 5580 3610 50  0000 L CNN
+F 2 "" H 5550 3650 50  0001 C CNN
+F 3 "" H 5550 3650 50  0001 C CNN
+	1    5550 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3650 5750 3650
+Wire Wire Line
+	6050 3850 6050 3950
+Wire Wire Line
+	6050 3450 6050 3350
+Text HLabel 6050 3350 0    60   Input ~ 0
+VCC
+Text HLabel 6050 3950 2    60   Input ~ 0
+RO_4
+Wire Wire Line
+	4700 3650 5450 3650
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE4ED
+P 5950 4400
+F 0 "Q?" H 6150 4450 50  0000 L CNN
+F 1 "PMV50XP" H 6150 4350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 4500 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE4F3
+P 5550 4400
+F 0 "R?" H 5580 4420 50  0000 L CNN
+F 1 "180" H 5580 4360 50  0000 L CNN
+F 2 "" H 5550 4400 50  0001 C CNN
+F 3 "" H 5550 4400 50  0001 C CNN
+	1    5550 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 4400 5750 4400
+Wire Wire Line
+	6050 4600 6050 4700
+Wire Wire Line
+	6050 4200 6050 4100
+Text HLabel 6050 4100 0    60   Input ~ 0
+VCC
+Text HLabel 6050 4700 2    60   Input ~ 0
+RO_5
+Wire Wire Line
+	4700 4400 5450 4400
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE500
+P 5950 5150
+F 0 "Q?" H 6150 5200 50  0000 L CNN
+F 1 "PMV50XP" H 6150 5100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 5250 50  0001 C CNN
+F 3 "" H 5950 5150 50  0001 C CNN
+	1    5950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE506
+P 5550 5150
+F 0 "R?" H 5580 5170 50  0000 L CNN
+F 1 "180" H 5580 5110 50  0000 L CNN
+F 2 "" H 5550 5150 50  0001 C CNN
+F 3 "" H 5550 5150 50  0001 C CNN
+	1    5550 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 5150 5750 5150
+Wire Wire Line
+	6050 5350 6050 5450
+Wire Wire Line
+	6050 4950 6050 4850
+Text HLabel 6050 4850 0    60   Input ~ 0
+VCC
+Text HLabel 6050 5450 2    60   Input ~ 0
+RO_6
+Wire Wire Line
+	4600 5150 5450 5150
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE513
+P 5950 5900
+F 0 "Q?" H 6150 5950 50  0000 L CNN
+F 1 "PMV50XP" H 6150 5850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 6000 50  0001 C CNN
+F 3 "" H 5950 5900 50  0001 C CNN
+	1    5950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE519
+P 5550 5900
+F 0 "R?" H 5580 5920 50  0000 L CNN
+F 1 "180" H 5580 5860 50  0000 L CNN
+F 2 "" H 5550 5900 50  0001 C CNN
+F 3 "" H 5550 5900 50  0001 C CNN
+	1    5550 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 5900 5750 5900
+Wire Wire Line
+	6050 6100 6050 6200
+Wire Wire Line
+	6050 5700 6050 5600
+Text HLabel 6050 5600 0    60   Input ~ 0
+VCC
+Text HLabel 6050 6200 2    60   Input ~ 0
+RO_7
+Wire Wire Line
+	4500 5900 5450 5900
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 59AAE526
+P 5950 6650
+F 0 "Q?" H 6150 6700 50  0000 L CNN
+F 1 "PMV50XP" H 6150 6600 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 6750 50  0001 C CNN
+F 3 "" H 5950 6650 50  0001 C CNN
+	1    5950 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59AAE52C
+P 5550 6650
+F 0 "R?" H 5580 6670 50  0000 L CNN
+F 1 "180" H 5580 6610 50  0000 L CNN
+F 2 "" H 5550 6650 50  0001 C CNN
+F 3 "" H 5550 6650 50  0001 C CNN
+	1    5550 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 6650 5750 6650
+Wire Wire Line
+	6050 6850 6050 6950
+Wire Wire Line
+	6050 6450 6050 6350
+Text HLabel 6050 6350 0    60   Input ~ 0
+VCC
+Text HLabel 6050 6950 2    60   Input ~ 0
+RO_8
+Wire Wire Line
+	4400 6650 5450 6650
+Wire Wire Line
+	4050 3700 4400 3700
+Wire Wire Line
+	4400 3700 4400 1400
+Wire Wire Line
+	4400 1400 5450 1400
+Wire Wire Line
+	4050 3800 4500 3800
+Wire Wire Line
+	4500 3800 4500 2150
+Wire Wire Line
+	4500 2150 5450 2150
+Wire Wire Line
+	4050 3900 4600 3900
+Wire Wire Line
+	4600 3900 4600 2900
+Wire Wire Line
+	4600 2900 5450 2900
+Wire Wire Line
+	4700 4000 4700 3650
+Wire Wire Line
+	4700 4100 4700 4400
+Wire Wire Line
+	4600 4200 4600 5150
+Wire Wire Line
+	4500 4300 4500 5900
+Wire Wire Line
+	4400 4400 4400 6650
+$EndSCHEMATC
