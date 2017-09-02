@@ -30,12 +30,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:ledmatrix
 LIBS:misc_logic
-LIBS:ledmatrix-dual-cache
+LIBS:ledmatrix-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -46,12 +46,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 1588BS U?
+L 1588BS U1
 U 1 1 59AA78F5
 P 6550 2750
-F 0 "U?" H 6550 2750 60  0000 C CNN
+AR Path="/59AA789F/59AA78F5" Ref="U1"  Part="1" 
+AR Path="/59AABAB3/59AA78F5" Ref="U3"  Part="1" 
+AR Path="/59AB26B1/59AA78F5" Ref="U6"  Part="1" 
+F 0 "U1" H 6550 2750 60  0000 C CNN
 F 1 "1588BS" H 6550 2350 60  0000 C CNN
-F 2 "" H 6650 2600 60  0001 C CNN
+F 2 "footprints:LEDMATRIX_1588BS" H 6650 2600 60  0001 C CNN
 F 3 "" H 6650 2600 60  0001 C CNN
 	1    6550 2750
 	1    0    0    -1  
@@ -85,12 +88,15 @@ ROW_7
 Text HLabel 5850 3100 0    60   Input ~ 0
 ROW_8
 $Comp
-L STP08DP05 U?
+L STP08DP05 U2
 U 1 1 59AA7ABF
 P 7800 2750
-F 0 "U?" H 7800 2750 60  0000 C CNN
+AR Path="/59AA789F/59AA7ABF" Ref="U2"  Part="1" 
+AR Path="/59AABAB3/59AA7ABF" Ref="U4"  Part="1" 
+AR Path="/59AB26B1/59AA7ABF" Ref="U7"  Part="1" 
+F 0 "U2" H 7800 2750 60  0000 C CNN
 F 1 "STP08DP05" H 7800 2250 60  0000 C CNN
-F 2 "" H 8000 2500 60  0001 C CNN
+F 2 "SMD_Packages:SO-16-N" H 8000 2500 60  0001 C CNN
 F 3 "" H 8000 2500 60  0001 C CNN
 	1    7800 2750
 	-1   0    0    -1  
@@ -144,12 +150,15 @@ Wire Wire Line
 Wire Wire Line
 	5850 3100 6000 3100
 $Comp
-L R_Small R?
+L R_Small R1
 U 1 1 59AA7F03
 P 9150 2900
-F 0 "R?" H 9180 2920 50  0000 L CNN
+AR Path="/59AA789F/59AA7F03" Ref="R1"  Part="1" 
+AR Path="/59AABAB3/59AA7F03" Ref="R2"  Part="1" 
+AR Path="/59AB26B1/59AA7F03" Ref="R11"  Part="1" 
+F 0 "R1" H 9180 2920 50  0000 L CNN
 F 1 "1k" H 9180 2860 50  0000 L CNN
-F 2 "" H 9150 2900 50  0001 C CNN
+F 2 "footprints:0603_HAND" H 9150 2900 50  0001 C CNN
 F 3 "" H 9150 2900 50  0001 C CNN
 	1    9150 2900
 	0    1    1    0   
