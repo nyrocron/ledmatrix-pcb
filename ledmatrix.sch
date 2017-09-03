@@ -338,8 +338,6 @@ $EndComp
 Text Label 2700 2000 0    60   ~ 0
 VCC
 Wire Wire Line
-	2150 2000 2900 2000
-Wire Wire Line
 	2700 2100 2900 2100
 Text Label 1650 2300 2    60   ~ 0
 CDI
@@ -369,21 +367,26 @@ Text Label 1750 1800 3    60   ~ 0
 VCC
 Wire Wire Line
 	2150 2300 2150 2000
-$Comp
-L C_Small C1
-U 1 1 59ABF7FF
-P 2400 2100
-F 0 "C1" H 2410 2170 50  0000 L CNN
-F 1 "10u" H 2410 2020 50  0000 L CNN
-F 2 "footprints:0805_HAND" H 2400 2100 50  0001 C CNN
-F 3 "" H 2400 2100 50  0001 C CNN
-	1    2400 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 2200 2400 2400
 Wire Wire Line
 	2400 2400 2150 2400
 Text Label 2150 2400 0    60   ~ 0
 GND
+$Comp
+L C_Small C1
+U 1 1 59ABF7FF
+P 2400 2150
+F 0 "C1" H 2410 2220 50  0000 L CNN
+F 1 "10u" H 2410 2070 50  0000 L CNN
+F 2 "footprints:0805_HAND" H 2400 2150 50  0001 C CNN
+F 3 "" H 2400 2150 50  0001 C CNN
+	1    2400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2000 2900 2000
+Connection ~ 2400 2000
+Wire Wire Line
+	2400 2050 2400 2000
+Wire Wire Line
+	2400 2250 2400 2400
 $EndSCHEMATC
