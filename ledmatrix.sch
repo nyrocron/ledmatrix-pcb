@@ -309,19 +309,19 @@ Text Label 7500 1900 0    60   ~ 0
 GND
 Text Label 1600 1600 2    60   ~ 0
 RI_B
-Text Label 2200 2100 2    60   ~ 0
+Text Label 1650 2400 2    60   ~ 0
 CCK
 Text Label 1600 1500 2    60   ~ 0
 CLE
 $Comp
 L CONN_02X02 J2
 U 1 1 59AB4B91
-P 2450 2050
-F 0 "J2" H 2450 2200 50  0000 C CNN
-F 1 "BUS_IN2" H 2450 1900 50  0000 C CNN
-F 2 "footprints:PINHDR_2x2_angled_male" H 2450 850 50  0001 C CNN
-F 3 "" H 2450 850 50  0001 C CNN
-	1    2450 2050
+P 1900 2350
+F 0 "J2" H 1900 2500 50  0000 C CNN
+F 1 "BUS_IN2" H 1900 2200 50  0000 C CNN
+F 2 "footprints:PINHDR_2x2_angled_male" H 1900 1150 50  0001 C CNN
+F 3 "" H 1900 1150 50  0001 C CNN
+	1    1900 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -338,10 +338,10 @@ $EndComp
 Text Label 2700 2000 0    60   ~ 0
 VCC
 Wire Wire Line
-	2700 2000 2900 2000
+	2150 2000 2900 2000
 Wire Wire Line
 	2700 2100 2900 2100
-Text Label 2200 2000 2    60   ~ 0
+Text Label 1650 2300 2    60   ~ 0
 CDI
 Wire Wire Line
 	2150 1700 2150 1600
@@ -367,4 +367,23 @@ Wire Wire Line
 	1850 1800 1750 1800
 Text Label 1750 1800 3    60   ~ 0
 VCC
+Wire Wire Line
+	2150 2300 2150 2000
+$Comp
+L C_Small C1
+U 1 1 59ABF7FF
+P 2400 2100
+F 0 "C1" H 2410 2170 50  0000 L CNN
+F 1 "10u" H 2410 2020 50  0000 L CNN
+F 2 "footprints:0805_HAND" H 2400 2100 50  0001 C CNN
+F 3 "" H 2400 2100 50  0001 C CNN
+	1    2400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2200 2400 2400
+Wire Wire Line
+	2400 2400 2150 2400
+Text Label 2150 2400 0    60   ~ 0
+GND
 $EndSCHEMATC

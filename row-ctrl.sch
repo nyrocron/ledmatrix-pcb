@@ -68,9 +68,9 @@ Text HLabel 2900 4100 0    60   Input ~ 0
 GND
 Text HLabel 2900 4200 0    60   Input ~ 0
 GND
-Text HLabel 2900 4400 0    60   Input ~ 0
+Text HLabel 2550 4600 0    60   Input ~ 0
 GND
-Text HLabel 2900 4300 0    60   Input ~ 0
+Text HLabel 2550 4300 0    60   Input ~ 0
 VCC
 Wire Wire Line
 	2900 3700 3050 3700
@@ -85,7 +85,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 4200 3050 4200
 Wire Wire Line
-	2900 4300 3050 4300
+	2550 4300 3050 4300
 Wire Wire Line
 	2900 4400 3050 4400
 Wire Wire Line
@@ -408,4 +408,25 @@ Wire Wire Line
 	4500 4300 4500 5900
 Wire Wire Line
 	4400 4400 4400 6650
+$Comp
+L C_Small C4
+U 1 1 59AC0042
+P 2700 4450
+F 0 "C4" H 2710 4520 50  0000 L CNN
+F 1 "1u" H 2710 4370 50  0000 L CNN
+F 2 "footprints:0603_HAND" H 2700 4450 50  0001 C CNN
+F 3 "" H 2700 4450 50  0001 C CNN
+	1    2700 4450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 4350 2700 4300
+Connection ~ 2700 4300
+Wire Wire Line
+	2550 4600 2900 4600
+Wire Wire Line
+	2700 4600 2700 4550
+Wire Wire Line
+	2900 4600 2900 4400
+Connection ~ 2700 4600
 $EndSCHEMATC

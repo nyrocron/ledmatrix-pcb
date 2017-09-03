@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -59,9 +59,9 @@ F 3 "" H 6650 2600 60  0001 C CNN
 	1    6550 2750
 	1    0    0    -1  
 $EndComp
-Text HLabel 8500 2400 2    60   Input ~ 0
+Text HLabel 8800 2200 2    60   Input ~ 0
 VCC
-Text HLabel 8500 2500 2    60   Input ~ 0
+Text HLabel 8800 2500 2    60   Input ~ 0
 GND
 Text HLabel 8500 2600 2    60   Input ~ 0
 COL_DI
@@ -118,9 +118,9 @@ Wire Wire Line
 Wire Wire Line
 	7100 3100 7200 3100
 Wire Wire Line
-	8400 2400 8500 2400
+	8500 2400 8400 2400
 Wire Wire Line
-	8500 2500 8400 2500
+	8400 2500 8800 2500
 Wire Wire Line
 	8400 2600 8500 2600
 Wire Wire Line
@@ -169,4 +169,27 @@ Wire Wire Line
 	8400 2900 9050 2900
 Wire Wire Line
 	9250 2900 9350 2900
+$Comp
+L C_Small C2
+U 1 1 59AC0BD1
+P 8650 2350
+AR Path="/59AA789F/59AC0BD1" Ref="C2"  Part="1" 
+AR Path="/59AABAB3/59AC0BD1" Ref="C3"  Part="1" 
+F 0 "C2" H 8660 2420 50  0000 L CNN
+F 1 "1u" H 8660 2270 50  0000 L CNN
+F 2 "footprints:0603_HAND" H 8650 2350 50  0001 C CNN
+F 3 "" H 8650 2350 50  0001 C CNN
+	1    8650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2500 8650 2450
+Connection ~ 8650 2500
+Wire Wire Line
+	8500 2200 8500 2400
+Wire Wire Line
+	8500 2200 8800 2200
+Wire Wire Line
+	8650 2250 8650 2200
+Connection ~ 8650 2200
 $EndSCHEMATC
